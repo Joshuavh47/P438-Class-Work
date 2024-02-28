@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "netster.py", line 98, in <module>
+    else: run_server(args, fp)
+  File "netster.py", line 49, in run_server
+    if fp: fns[args.rudp]()
+  File "netster.py", line 47, in <lambda>
+    lambda: stopandwait_server(args.iface, args.port, fp),
+  File "/nfs/nfs2/home/jeeres/P438/jeeres/netster_py/stopandwait.py", line 17, in stopandwait_server
+    data,addr=s.recvfrom(1024)
+  File "/nfs/nfs2/home/jeeres/P438/jeeres/netster_py/netster.py", line 6, in recvfrom
+    data = self._realrecvfrom(sz, flags)
+  File "netster.py", line 6, in recvfrom
+    data = self._realrecvfrom(sz, flags)
+  File "netster.py", line 6, in recvfrom
+    data = self._realrecvfrom(sz, flags)
+  File "netster.py", line 6, in recvfrom
+    data = self._realrecvfrom(sz, flags)
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded

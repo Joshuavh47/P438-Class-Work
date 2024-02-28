@@ -1,0 +1,21 @@
+-> Traceback (most recent call last):
+  File "netster.py", line 97, in <module>
+    if args.host: run_client(args, fp)
+  File "netster.py", line 56, in run_client
+    if fp: fns[args.rudp]()
+  File "netster.py", line 54, in <lambda>
+    lambda: stopandwait_client(args.host, args.port, fp),
+  File "/nfs/nfs2/home/jeeres/P438/jeeres/netster_py/stopandwait.py", line 31, in stopandwait_client
+    s.sendto(msg.encode(),(host,port))
+  File "/nfs/nfs2/home/jeeres/P438/jeeres/netster_py/netster.py", line 18, in sendto
+    self._realsendto(data, flags, addr)
+  File "netster.py", line 18, in sendto
+    self._realsendto(data, flags, addr)
+  File "netster.py", line 18, in sendto
+    self._realsendto(data, flags, addr)
+  File "netster.py", line 18, in sendto
+    self._realsendto(data, flags, addr)
+  [Previous line repeated 991 more times]
+  File "netster.py", line 11, in sendto
+    sendto.pkt = getattr(sendto, "pkt", 0) + 1
+RecursionError: maximum recursion depth exceeded while calling a Python object
